@@ -1,15 +1,17 @@
 'use client';
 
-import Link from 'next/link';
-
 export default function Banner() {
   return (
-    <nav className="bg-gray-800 text-white p-4">
-      <ul className="flex gap-4">
-        <li><Link href="/" className="text-yellow-400 hover:text-yellow-300">Home</Link></li>
-        <li><Link href="/about" className="text-yellow-400 hover:text-yellow-300">About</Link></li>
-        <li><Link href="/contact" className="text-yellow-400 hover:text-yellow-300">Contact</Link></li>
-      </ul>
+    <nav className="bg-gray-800 p-4">
+      <div className="container mx-auto flex justify-between items-center">
+        <div className="text-white font-bold">Logo</div>
+        <div className="flex space-x-4">
+          <a href="#" className="text-pink-400 hover:text-pink-300">Home</a>
+          <a href="#" className="text-pink-400 hover:text-pink-300">About</a>
+          <a href="#" className="text-pink-400 hover:text-pink-300">Services</a>
+          <a href="#" className="text-pink-400 hover:text-pink-300">Contact</a>
+        </div>
+      </div>
     </nav>
   );
 }

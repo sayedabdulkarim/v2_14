@@ -7,11 +7,11 @@ export default function Home() {
   return (
     <div className="min-h-screen flex flex-col">
       <Banner />
-      <div className="flex-1 container mx-auto px-4 py-8">
+      <div className="flex-grow container mx-auto p-4">
         <Counter />
         <Card 
-          title="Sample Title"
-          description="Sample Description"
+          title="Sample Card"
+          description="This is a sample card description"
           imageUrl="/sample-image.jpg"
         />
       </div>

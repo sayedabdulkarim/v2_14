@@ -2,14 +2,20 @@
 
 export default function Banner() {
   return (
-    <nav className="bg-gray-800 p-4">
-      <div className="container mx-auto flex justify-between items-center">
-        <div className="text-white font-bold">Logo</div>
-        <div className="flex space-x-4">
-          <a href="#" className="text-green-400 hover:text-green-300">Home</a>
-          <a href="#" className="text-green-400 hover:text-green-300">About</a>
-          <a href="#" className="text-green-400 hover:text-green-300">Services</a>
-          <a href="#" className="text-green-400 hover:text-green-300">Contact</a>
+    <nav className="bg-white shadow-lg">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex justify-between h-16 items-center">
+          <div className="flex">
+            <div className="flex-shrink-0 flex items-center">
+              <span className="text-xl font-bold">Logo</span>
+            </div>
+            <div className="hidden md:flex md:ml-6">
+              <a href="#" className="text-orange-500 hover:text-orange-700 px-3 py-2 rounded-md text-sm font-medium">Home</a>
+              <a href="#" className="text-orange-500 hover:text-orange-700 px-3 py-2 rounded-md text-sm font-medium">About</a>
+              <a href="#" className="text-orange-500 hover:text-orange-700 px-3 py-2 rounded-md text-sm font-medium">Services</a>
+              <a href="#" className="text-orange-500 hover:text-orange-700 px-3 py-2 rounded-md text-sm font-medium">Contact</a>
+            </div>
+          </div>
         </div>
       </div>
     </nav>

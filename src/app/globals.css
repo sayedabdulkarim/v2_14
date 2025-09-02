@@ -2,8 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --brown-600: #92400e;
-  --brown-700: #78350f;
-  --brown-800: #632b12;
+.nav-link {
+  @apply text-green-400 hover:text-green-300;
 }

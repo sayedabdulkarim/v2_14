@@ -1,7 +1,5 @@
 'use client';
 
-import Link from 'next/link';
-
 export default function Banner() {
   return (
     <nav className="bg-white shadow-lg">
@@ -9,13 +7,21 @@ export default function Banner() {
         <div className="flex justify-between h-16">
           <div className="flex">
             <div className="flex-shrink-0 flex items-center">
-              <Link href="/" className="text-black font-bold text-xl">Logo</Link>
+              <h1 className="text-xl font-bold">Logo</h1>
             </div>
             <div className="hidden sm:ml-6 sm:flex sm:space-x-8">
-              <Link href="/" className="text-black hover:text-gray-700 px-3 py-2 rounded-md text-sm font-medium">Home</Link>
-              <Link href="/about" className="text-black hover:text-gray-700 px-3 py-2 rounded-md text-sm font-medium">About</Link>
-              <Link href="/services" className="text-black hover:text-gray-700 px-3 py-2 rounded-md text-sm font-medium">Services</Link>
-              <Link href="/contact" className="text-black hover:text-gray-700 px-3 py-2 rounded-md text-sm font-medium">Contact</Link>
+              <a href="#" className="text-blue-600 hover:text-blue-800 inline-flex items-center px-1 pt-1 border-b-2 border-transparent hover:border-blue-600">
+                Home
+              </a>
+              <a href="#" className="text-blue-600 hover:text-blue-800 inline-flex items-center px-1 pt-1 border-b-2 border-transparent hover:border-blue-600">
+                About
+              </a>
+              <a href="#" className="text-blue-600 hover:text-blue-800 inline-flex items-center px-1 pt-1 border-b-2 border-transparent hover:border-blue-600">
+                Services
+              </a>
+              <a href="#" className="text-blue-600 hover:text-blue-800 inline-flex items-center px-1 pt-1 border-b-2 border-transparent hover:border-blue-600">
+                Contact
+              </a>
             </div>
           </div>
         </div>

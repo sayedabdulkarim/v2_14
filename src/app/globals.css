@@ -2,14 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-.text-brown-600 {
-  color: #795548;
-}
-
-.text-brown-900 {
-  color: #3e2723;
-}
-
-.hover\:text-brown-900:hover {
-  color: #3e2723;
+:root {
+  --brown-600: #92400e;
+  --brown-700: #78350f;
+  --brown-800: #632b12;
 }
